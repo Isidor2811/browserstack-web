@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke suite (chrome)" parallel="tests" thread-count="3">
+
+  <test name="Login">
+    <classes>
+      <class name="tests.LoginTests"/>
+    </classes>
+  </test>
+
+  <test name="Login #2">
+    <classes>
+      <class name="tests.LoginTestsDuplicatesOne"/>
+    </classes>
+  </test>
+
+  <test name="Login #3">
+    <classes>
+      <class name="tests.LoginTestsDuplicatesSecond"/>
+    </classes>
+  </test>
+
+</suite>
